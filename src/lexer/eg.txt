@@ -1,0 +1,45 @@
+using <iostream>;
+
+set int x = 0;
+
+//varaibles
+set type nofvar = value;      // initializtion
+set type id;   // declaration without initializtion
+
+id = 10;
+
+//array
+setarr type id[];
+
+//logical operator
+&& , || , !
+if x>8:
+
+//if statement
+if (x > y) {//body of the if statement}
+elif (5==1){ //body }
+else{ //body }
+
+
+//while 
+while condition{
+    //body
+    break;
+    continue;
+}
+
+string name;
+name=mohammend;
+
+//create func
+func type noffunc(numbers:type, string:type){ //body of the function }
+
+
+//Call func
+nameOfFunc(x);
+nameOfFunc(6);
+
+nameOfFunc(y:4); 'saad'
+
+
+

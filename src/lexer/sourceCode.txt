@@ -1,0 +1,33 @@
+set int x;
+set int y = 10;
+x = 20;
+
+set int x;
+
+set bool check = (3*1) == (1*7);
+
+set int size = 3;
+setarr int array1[size];
+array1 = {1, 2, 3};
+
+setarr int array2[5] = {x, y};
+
+
+
+if(x==20){
+set int z;
+z = 100;
+}elif(y>x){
+  set int w;
+  w = 100;
+}else{
+  if(1){}
+}
+while(9){
+  set int i = 50;
+}
+
+func int sum(x:int, y:int){
+set int j = 50;
+}
+sum(x, y);

@@ -1,0 +1,33 @@
+//Start ⟶ Import* | Stmt+
+
+//Import ⟶ using <ID>;
+
+Stmt ⟶ Declar | Initial | If | While | Callfunc | Function | assign
+
+int x; // declar
+int x = 10; initialition 
+x=0; // assingment
+
+Declar ⟶ set type id | setarr type id[(id)?];
+
+Initial ⟶ set type id = EXPr; | id = EXPr; | setarr type id[(id)?]= {value*}; | id[(id)?]= {value*};
+
+If ⟶ if EXPr { stmt* } (elif EXPr { stmt* })* (else { stmt* })?
+
+While ⟶ while EXPr { stmt* }
+
+Function ⟶ func type id((id:type)*) { stmt* }
+
+Callfunction ⟶ id(EXPr); | ((id:value); | (id, value); 'saad')
+
+EXPr ⟶ Equality
+
+Equality ⟶ Comparison (( == | != ) Comparison)*
+
+Comparison ⟶ term (( > | < | >= | <= ) term)*
+
+term ⟶ factor (( + | - ) factor)*
+
+factor ⟶ unary (( * | / ) unary)*
+
+unary ⟶ number | ID | EXPr
